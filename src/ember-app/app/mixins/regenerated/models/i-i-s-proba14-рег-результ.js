@@ -56,14 +56,14 @@ export let defineProjections = function (modelClass) {
     организация: belongsTo('i-i-s-proba14-организация', 'Наименование организации', {
       наименование: attr('Наименование', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'наименование' }),
-    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имена и должности участников собеседования', {
+    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имя участников собеседования (от организации)', {
       фИОСотруд: attr('Ф и о сотруд', { index: 4, hidden: true }),
       должнСотр: belongsTo('i-i-s-proba14-должн-сотр', '', {
-        должность: attr('Должность сотрудника', { index: 5 })
+        должность: attr('Должность участника собеседования', { index: 5 })
       }, { index: -1, hidden: true })
     }, { index: 3, displayMemberPath: 'фИОСотруд' }),
     планирСобес: belongsTo('i-i-s-proba14-планир-собес', 'Иметь при себе', {
-      иметьПриСебе: attr('Иметь при себе', { index: 7, hidden: true })
+
     }, { index: 6, displayMemberPath: 'иметьПриСебе' }),
     тЧРегРезульт: hasMany('i-i-s-proba14-т-ч-рег-результ', 'Регистрация результатов собеседования', {
       итогСобес: attr('Итог собеседования', { index: 0 }),
@@ -83,8 +83,7 @@ export let defineProjections = function (modelClass) {
         вакантДолжн: belongsTo('i-i-s-proba14-вакант-должн', '', {
           должности: attr('Вакантная должность', { index: 3 })
         }, { index: -1, hidden: true })
-      }, { index: -1, hidden: true }),
-      иметьПриСебе: attr('Иметь при себе', { index: 5 })
+      }, { index: -1, hidden: true })
     }, { index: -1, hidden: true }),
     сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имена и должности участников собеседования', {
       фИОСотруд: attr('Имена и должности участников собеседования', { index: 4 })

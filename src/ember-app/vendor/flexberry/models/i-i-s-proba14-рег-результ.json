@@ -94,7 +94,7 @@
               "attrs": [
                 {
                   "name": "должность",
-                  "caption": "Должность сотрудника",
+                  "caption": "Должность участника собеседования",
                   "hidden": false,
                   "index": 5
                 }
@@ -118,7 +118,7 @@
           ],
           "index": 3,
           "type": "standard",
-          "caption": "Имена и должности участников собеседования",
+          "caption": "Имя участников собеседования (от организации)",
           "name": "сотрудники",
           "relatedTo": "i-i-s-proba14-сотрудники",
           "inverse": null
@@ -129,14 +129,7 @@
           "relationName": "ПланирСобес",
           "belongsTo": [],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "иметьПриСебе",
-              "caption": "Иметь при себе",
-              "hidden": true,
-              "index": 7
-            }
-          ],
+          "attrs": [],
           "index": 6,
           "type": "standard",
           "caption": "Иметь при себе",
@@ -238,14 +231,7 @@
             }
           ],
           "hidden": false,
-          "attrs": [
-            {
-              "name": "иметьПриСебе",
-              "caption": "Иметь при себе",
-              "hidden": false,
-              "index": 5
-            }
-          ],
+          "attrs": [],
           "index": -1,
           "type": "default",
           "caption": "ФИО кандидата",
