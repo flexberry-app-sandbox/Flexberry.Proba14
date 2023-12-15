@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-proba14-вакант-должн-l',
             caption: i18n.t('forms.application.sitemap.информация-об-организации.i-i-s-proba14-вакант-должн-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-об-организации.i-i-s-proba14-вакант-должн-l.title'),
-            icon: 'file',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-proba14-организация-l',
             caption: i18n.t('forms.application.sitemap.информация-об-организации.i-i-s-proba14-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-об-организации.i-i-s-proba14-организация-l.title'),
-            icon: 'briefcase',
+            icon: 'archive',
             children: null
           }]
         }, {
@@ -46,19 +46,19 @@ export default Controller.extend({
             link: 'i-i-s-proba14-рег-результ-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-рег-результ-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-рег-результ-l.title'),
-            icon: 'list',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-proba14-планир-собес-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-планир-собес-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-планир-собес-l.title'),
-            icon: 'building',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-proba14-регист-анкеты-l',
             caption: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-регист-анкеты-l.caption'),
             title: i18n.t('forms.application.sitemap.документы.i-i-s-proba14-регист-анкеты-l.title'),
-            icon: 'list',
+            icon: 'file',
             children: null
           }]
         }, {
@@ -70,13 +70,13 @@ export default Controller.extend({
             link: 'i-i-s-proba14-должн-сотр-l',
             caption: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-proba14-должн-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-proba14-должн-сотр-l.title'),
-            icon: 'chart bar',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-proba14-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-proba14-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-proba14-сотрудники-l.title'),
-            icon: 'archive',
+            icon: 'suitcase',
             children: null
           }]
         }
