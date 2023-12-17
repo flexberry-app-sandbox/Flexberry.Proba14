@@ -30,10 +30,10 @@ namespace IIS.Proba14
     [Caption("Должность сотрудника")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ДолжнСотрE", new string[] {
-            "IDДолжности as \'I d должности\'",
+            "IDДолжности as \'ID должности\'",
             "Должность as \'Должность сотрудника\'"})]
     [View("ДолжнСотрL", new string[] {
-            "IDДолжности as \'I d должности\'",
+            "IDДолжности as \'ID должности\'",
             "Должность as \'Должность сотрудника\'"})]
     public class ДолжнСотр : ICSSoft.STORMNET.DataObject
     {

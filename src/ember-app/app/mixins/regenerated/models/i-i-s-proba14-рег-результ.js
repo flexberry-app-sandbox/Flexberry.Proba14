@@ -56,15 +56,12 @@ export let defineProjections = function (modelClass) {
     организация: belongsTo('i-i-s-proba14-организация', 'Наименование организации', {
       наименование: attr('Наименование', { index: 2, hidden: true })
     }, { index: 1, displayMemberPath: 'наименование' }),
-    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имя участников собеседования (от организации)', {
+    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имя участника собеседования', {
       фИОСотруд: attr('Ф и о сотруд', { index: 4, hidden: true }),
       должнСотр: belongsTo('i-i-s-proba14-должн-сотр', '', {
         должность: attr('Должность участника собеседования', { index: 5 })
       }, { index: -1, hidden: true })
     }, { index: 3, displayMemberPath: 'фИОСотруд' }),
-    планирСобес: belongsTo('i-i-s-proba14-планир-собес', 'Иметь при себе', {
-
-    }, { index: 6, displayMemberPath: 'иметьПриСебе' }),
     тЧРегРезульт: hasMany('i-i-s-proba14-т-ч-рег-результ', 'Регистрация результатов собеседования', {
       итогСобес: attr('Итог собеседования', { index: 0 }),
       оценкаКандид: attr('Оценка кандидата', { index: 1 }),
@@ -85,8 +82,11 @@ export let defineProjections = function (modelClass) {
         }, { index: -1, hidden: true })
       }, { index: -1, hidden: true })
     }, { index: -1, hidden: true }),
-    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имена и должности участников собеседования', {
-      фИОСотруд: attr('Имена и должности участников собеседования', { index: 4 })
+    сотрудники: belongsTo('i-i-s-proba14-сотрудники', 'Имя участника собеседования', {
+      фИОСотруд: attr('Имя участника собеседования', { index: 4 }),
+      должнСотр: belongsTo('i-i-s-proba14-должн-сотр', '', {
+        должность: attr('Должность участника собеседования', { index: 5 })
+      }, { index: -1, hidden: true })
     }, { index: -1, hidden: true })
   });
 };

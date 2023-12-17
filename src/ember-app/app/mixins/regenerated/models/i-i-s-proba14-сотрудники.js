@@ -36,7 +36,7 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('СотрудникиE', 'i-i-s-proba14-сотрудники', {
     фИОСотруд: attr('ФИО сотрудника', { index: 0 }),
-    iDСотр: attr('I d сотр', { index: 1 }),
+    iDСотр: attr('ID сотрудника', { index: 1 }),
     должнСотр: belongsTo('i-i-s-proba14-должн-сотр', 'Должность сотрудника', {
       должность: attr('Должность сотрудника', { index: 3, hidden: true })
     }, { index: 2, displayMemberPath: 'должность' })
@@ -44,7 +44,7 @@ export let defineProjections = function (modelClass) {
 
   modelClass.defineProjection('СотрудникиL', 'i-i-s-proba14-сотрудники', {
     фИОСотруд: attr('ФИО сотрудника', { index: 0 }),
-    iDСотр: attr('I d сотр', { index: 1 }),
+    iDСотр: attr('ID сотрудника', { index: 1 }),
     должнСотр: belongsTo('i-i-s-proba14-должн-сотр', 'Должность сотрудника', {
       должность: attr('Должность сотрудника', { index: 2 })
     }, { index: -1, hidden: true })

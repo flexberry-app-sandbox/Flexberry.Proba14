@@ -118,23 +118,9 @@
           ],
           "index": 3,
           "type": "standard",
-          "caption": "Имя участников собеседования (от организации)",
+          "caption": "Имя участника собеседования",
           "name": "сотрудники",
           "relatedTo": "i-i-s-proba14-сотрудники",
-          "inverse": null
-        },
-        {
-          "lookupValue": "ИметьПриСебе",
-          "lookupValueField": "иметьПриСебе",
-          "relationName": "ПланирСобес",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [],
-          "index": 6,
-          "type": "standard",
-          "caption": "Иметь при себе",
-          "name": "планирСобес",
-          "relatedTo": "i-i-s-proba14-планир-собес",
           "inverse": null
         }
       ],
@@ -243,19 +229,41 @@
           "lookupValue": null,
           "lookupValueField": null,
           "relationName": "Сотрудники",
-          "belongsTo": [],
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудники.ДолжнСотр",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "должность",
+                  "caption": "Должность участника собеседования",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должнСотр",
+              "relatedTo": "i-i-s-proba14-должн-сотр",
+              "inverse": null
+            }
+          ],
           "hidden": false,
           "attrs": [
             {
               "name": "фИОСотруд",
-              "caption": "Имена и должности участников собеседования",
+              "caption": "Имя участника собеседования",
               "hidden": false,
               "index": 4
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "Имена и должности участников собеседования",
+          "caption": "Имя участника собеседования",
           "name": "сотрудники",
           "relatedTo": "i-i-s-proba14-сотрудники",
           "inverse": null

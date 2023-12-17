@@ -48,7 +48,7 @@
         },
         {
           "name": "iDСотр",
-          "caption": "I d сотр",
+          "caption": "ID сотрудника",
           "hidden": false,
           "index": 1
         }
@@ -90,7 +90,7 @@
         },
         {
           "name": "iDСотр",
-          "caption": "I d сотр",
+          "caption": "ID сотрудника",
           "hidden": false,
           "index": 1
         }

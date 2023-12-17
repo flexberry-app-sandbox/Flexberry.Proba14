@@ -30,14 +30,14 @@ namespace IIS.Proba14
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникиE", new string[] {
             "ФИОСотруд as \'ФИО сотрудника\'",
-            "IDСотр as \'I d сотр\'",
+            "IDСотр as \'ID сотрудника\'",
             "ДолжнСотр as \'Должность сотрудника\'",
             "ДолжнСотр.Должность as \'Должность сотрудника\'"}, Hidden=new string[] {
             "ДолжнСотр.Должность"})]
     [MasterViewDefineAttribute("СотрудникиE", "ДолжнСотр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Должность")]
     [View("СотрудникиL", new string[] {
             "ФИОСотруд as \'ФИО сотрудника\'",
-            "IDСотр as \'I d сотр\'",
+            "IDСотр as \'ID сотрудника\'",
             "ДолжнСотр.Должность as \'Должность сотрудника\'"})]
     public class Сотрудники : ICSSoft.STORMNET.DataObject
     {
